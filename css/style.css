@@ -1,0 +1,528 @@
+/* ==================== common css start ===================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: .8;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.mr{
+    margin-right: 0 !important;
+}
+.mb{
+    margin-bottom: 0 !important;
+}
+.message{
+    height: 160px !important;
+    
+}
+/* ==================== header css start ===================== */
+#header{
+    background: #f6f9f9;
+}
+.header-logo{
+    width: 260px;
+    float: left;
+    padding-top: 10px;
+}
+.header-menu{
+    width: 700px;
+    float: left;
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.header-menu ul li:hover{
+    background: rgba(45, 57, 80, 0.6);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.header-menu ul li a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #252525;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.header-menu ul li a:hover{
+    color: #fff;
+}
+/* ==================== banner css start ===================== */
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 215px;
+    padding-bottom: 278px;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #fff;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+    position: relative;
+}
+.banner-text h1::after {
+	position: absolute;
+	height: 2px;
+	width: 600px;
+	background: #15a4fa;
+	content: '';
+	bottom: 40px;
+	left: 180px;
+}
+.banner-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 65px;
+}
+.banner-text a{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 35px;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    transition: all linear .5s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.banner-text a:hover{
+    background: #15a4fa;
+}
+.banner-icon{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform:  translateX(-50%);
+    transition: all linear .5s;
+    -webkit-transform:  translateX(-50%);
+    -moz-transform:  translateX(-50%);
+    -ms-transform:  translateX(-50%);
+    -o-transform:  translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.banner-icon:hover{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #15a4fa;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform:  translateX(-50%);
+    -webkit-transform:  translateX(-50%);
+    -moz-transform:  translateX(-50%);
+    -ms-transform:  translateX(-50%);
+    -o-transform:  translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.banner-icon i{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 5px;
+}
+/* ==================== design css start ===================== */
+#design{
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background: #f6f9f9;
+}
+.design-text{
+    text-align: center;
+}
+.design-text h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2d3950;
+    padding-bottom: 30px;
+}
+.design-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999999;
+    line-height: 32px;
+    width: 950px;
+}
+/* ==================== offer css start ===================== */
+#offer{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.offer-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.offer-item:hover{
+    background: rgba(72, 185, 255, 0.1);
+    box-shadow: 0 0 10px #2d3950;
+}
+.offer-icon:hover{
+    box-shadow: 0 0 10px #2d3950;
+}
+.offer-icon{
+    width: 100px;
+    background: #48baff;
+    position: relative;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.offer-icon i{
+    color: #fff;
+    font-size: 50px;
+    padding: 25px 0;
+}
+.offer-overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.05);
+}
+.offer-text{
+    text-align: center;
+}
+.offer-text h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2d3950;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.offer-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    line-height: 22px;
+}
+/* ==================== showcase css start ===================== */
+#showcase{
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background: #f6f9f9;
+}
+.showcase-text{
+    text-align: center;
+}
+.showcase-text h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #2d3950;
+    padding-bottom: 25px;
+}
+.showcase-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #909090;
+    padding-bottom: 80px;
+}
+.showcase-part{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+.showcase-item{
+    width: 300px;
+    margin-bottom: 30px;
+    line-height: 0;
+    position: relative;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.showcase-item:hover{
+    box-shadow: 0 0 5px #2d3950;
+}
+.showcase-item:hover .showcase-overly{
+    opacity: 1;
+}
+.showcase-item img{
+    width: 100%;
+}
+.showcase-overly{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(21, 162, 250, 0.7);
+    opacity: 0;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.showcase-overly i{
+    margin-top: 110px;
+    padding: 12px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    transition: all linear .5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.showcase-overly i:hover{
+    margin-top: 110px;
+    padding: 12px 15px;
+    border: 1px solid rgba(45, 57, 80, 0.5);
+    background: rgba(45, 57, 80, 0.5);
+
+}
+/* ==================== stay css start ===================== */
+#stay{
+    background-image: url(../images/bottom-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.stay-overly{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background: rgba(45, 57, 80, 0.8);
+}
+.stay-text{
+    text-align: center;
+}
+.stay-text h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.stay-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    padding-bottom: 50px;
+}
+.stay-form{
+    text-align: center;
+    position: relative;
+}
+.stay-form input{
+    width: 555px;
+    background: none;
+    border: none;
+    border: 1px solid #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.stay-form .message{
+    height: 165px;
+    width: 555px;
+    background: none;
+    border: none;
+    border: 1px solid #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.stay-form button {
+    position: absolute;
+    bottom: -47px;
+    right: 203px;
+    width: 140px;
+    background: none;
+    border: none;
+    border: 1px solid #15a4fa;
+    padding: 12px 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all linear .5s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.stay-form button:hover{
+	background: #15a4fa;
+	border: 1px solid #15a4fa;
+}
+.stay-form p {
+	bottom: -25px;
+	left: 230px;
+	position: absolute;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+	display: inline-block;
+}
+.check {
+	position: absolute;
+	bottom: -46px;
+	left: -68px;
+}
+/* ==================== footer css start ===================== */
+#footer{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background: #f6f9f9;
+}
+.footer-text{
+    float: left;
+    width: 460px;
+}
+.footer-icon{
+    text-align: right;
+    float: left;
+    width: 500px;
+}
+.footer-text h3{
+    font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #999;
+    padding-top: 18px;
+}
+.footer-icon i{
+    color: #fff;
+    padding: 13px;
+    background: #15a4fa;
+    border-radius: 3px;
+    transition: all linear .5s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+.footer-icon i:hover{
+    background: #2d3950;
+}
+/* ==================== The end ===================== */
